@@ -8,10 +8,10 @@
             width: 60%;
         }
 
-		#navbar {
+		.navbar {
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding: 0px;
         overflow: hidden;
         background-color: #653D3D;
         position: static;
@@ -19,17 +19,17 @@
         margin-left: 0px;
     }
 
-    li {
+    .list {
         float: left;
         text-align: center;
         display: inline-block;
     }
 
-    li a {
+    .list, a {
         display: block;
         color: white;
         text-align: center;
-        padding: 14px 16px;
+        padding: 5px 10px;
         text-decoration: none;
         margin-left: 15px;
     }
@@ -49,30 +49,40 @@
             background-color: #EDEDED;
         }
 
-        #bigtitle {
+        .bigtitle {
             font-size: 80px;
             text-align: center;
         }
     
-     #blogpost {
+     .blogpost {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: #968484;
-        position: static;
-        top: 0.5em;
+        position: relative;
         margin-left: 0px;
-        text-align: center;
+        text-align: left;
         }
 
-        #blogtext {
+        .blogtext {
         display: block;
         color: white;
         text-align: center;
-        /* padding: auto; */
+        padding: 0px 10px;
         text-decoration: none;
-        /* margin-left: 5px; */
+        display:inline-block ;
+        }
+
+        .flexy {
+            padding: 10px;
+            margin: 10px;
+            width: 360px;
+            height: 240px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
         }
 
     </style>
@@ -86,22 +96,28 @@
     </div>
 
 	<div>
-        <ul id="navbar">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">CONTACT</a></li>
+        <ul class="navbar">
+            <li class="list"><a href="#">HOME</a></li>
+            <li class="list"><a href="#">ABOUT ME</a></li>
+            <li class="list"><a href="#">BLOG</a></li>
+            <li class="list"><a href="#">CONTACT</a></li>
         </ul>
     </div>
 
-    <p id="bigtitle"> This is my first <br> website c: </p>
+    <p class="bigtitle"> This is my first <br> website c: </p>
 
-    <div id="blogpost">
+    <div class="blogpost">
         <ul>
-            <li id="blogtext"> LATEST BLOG POSTS </li>
+            <li class="blogtext">LATEST BLOG POSTS</li>
         </ul>
     </div>
+<div class="blogs">
+    <img src="Phone.png" class="flexy">
+    <img src="Taxify-Scooters.jpg" class="flexy">
+    <img src="Devices.jpg" class="flexy">
+    <img src="Debit_card_ATM.jpg" class="flexy">
 
+</div>
 
 </div>
 </body>
