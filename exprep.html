@@ -74,15 +74,21 @@
         display:inline-block ;
         }
 
+        .blogs {
+              padding: 0;
+              margin: 0;
+              list-style: none;
+              display: flex;
+              
+              flex-flow: row wrap;
+              justify-content: space-between;
+    }
+
         .flexy {
             padding: 10px;
             margin: 10px;
             width: 360px;
             height: 240px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-
         }
 
     </style>
@@ -111,12 +117,13 @@
             <li class="blogtext">LATEST BLOG POSTS</li>
         </ul>
     </div>
+
 <div class="blogs">
     <img src="Phone.png" class="flexy">
+    <p>Location marketing platform</p>
     <img src="Taxify-Scooters.jpg" class="flexy">
     <img src="Devices.jpg" class="flexy">
     <img src="Debit_card_ATM.jpg" class="flexy">
-
 </div>
 
 </div>
