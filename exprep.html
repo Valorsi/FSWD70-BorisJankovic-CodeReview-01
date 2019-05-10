@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <div class="container">
-	<img src="codefactory-vienna-logo.png" alt="Why Can't i see this?" class="flex-item">
-    <h1 class="flex-item">Boris Jankovic - I am a future Web Developer!</h1>
-    </div>
-
 	<style>
 		
-		ul {
+        .main {
+            margin: auto;
+            width: 60%;
+        }
+
+		#navbar {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -16,7 +16,6 @@
         background-color: #653D3D;
         position: static;
         top: 0.5em;
-        width: 60%;
         margin-left: 0px;
     }
 
@@ -24,7 +23,6 @@
         float: left;
         text-align: center;
         display: inline-block;
-
     }
 
     li a {
@@ -35,6 +33,7 @@
         text-decoration: none;
         margin-left: 15px;
     }
+
     body {
         font-family: bahnschrift;
     }
@@ -48,23 +47,62 @@
             justify-content: flex-start;
             align-items: center;
             background-color: #EDEDED;
-            width: 60%;
+        }
 
+        #bigtitle {
+            font-size: 80px;
+            text-align: center;
         }
     
+     #blogpost {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #968484;
+        position: static;
+        top: 0.5em;
+        margin-left: 0px;
+        text-align: center;
+        }
+
+        #blogtext {
+        display: block;
+        color: white;
+        text-align: center;
+        /* padding: auto; */
+        text-decoration: none;
+        /* margin-left: 5px; */
+        }
 
     </style>
 	<title></title>
 </head>
 <body>
-	<div id="Navbar">
-        <ul>
-            <li id="first"><a href="#">HOME</a></li>
+   <div class="main"> 
+    <div class="container">
+    <img src="codefactory-vienna-logo.png" alt="Why Can't i see this?" class="flex-item">
+    <h1 class="flex-item">Boris Jankovic - I am a future Web Developer!</h1>
+    </div>
+
+	<div>
+        <ul id="navbar">
+            <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT ME</a></li>
             <li><a href="#">BLOG</a></li>
             <li><a href="#">CONTACT</a></li>
         </ul>
     </div>
 
+    <p id="bigtitle"> This is my first <br> website c: </p>
+
+    <div id="blogpost">
+        <ul>
+            <li id="blogtext"> LATEST BLOG POSTS </li>
+        </ul>
+    </div>
+
+
+</div>
 </body>
 </html>
